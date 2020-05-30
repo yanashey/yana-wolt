@@ -1,0 +1,49 @@
+.subNavbar {
+    font-weight: 300;
+    color: var(--color3);
+    line-height: 50px;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color:var(--color6);
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.locationIcon{
+    display: block;
+    float: left;
+    position: relative;
+    padding-left: 20px;
+    color: var(--color7);
+}
+
+.actionsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.action{
+  margin:8px;
+}
+
+.actionsContainer span{
+    margin:8px;
+  }
+
+.actionIcon {
+    margin-right: 2px;
+}
+
+.action:hover{
+    color: var(--color1);
+    cursor: pointer;
+}
+
+
+.subActionsContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
