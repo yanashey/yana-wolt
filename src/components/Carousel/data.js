@@ -136,6 +136,12 @@ const categories = [
     categoryName: "Smoothie",
     numOfRestaurants: 6,
     url: require("./../../images/categories/smoothie.jpg-md")
+  },
+  {
+    id: 23,
+    categoryName: "Smoothie",
+    numOfRestaurants: 6,
+    url: require("./../../images/categories/smoothie.jpg-md")
   }
 ];
 
