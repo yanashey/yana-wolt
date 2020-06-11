@@ -1,0 +1,41 @@
+.carouselSlide {
+  width: 270px;
+  height: 330px;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+.imgWrapper {
+  overflow: hidden;
+  border-radius: 10px;
+  height: 270px;
+}
+
+.carouselSlide:hover {
+  cursor: pointer;
+}
+
+img {
+  height: 270px;
+  width: 270px;
+  transition: transform 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+.slideTitle {
+  text-align: left;
+  margin-top: 10px;
+  font-family: "Roboto";
+  font-size: 1.2em;
+}
+
+.slideInfo {
+  text-align: left;
+  font-family: "Roboto";
+  color: var(--color7);
+  margin-top: 7px;
+  font-size: 0.9em;
+}

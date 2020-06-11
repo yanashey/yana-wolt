@@ -2,19 +2,21 @@ import React from "react";
 import classes from "./Carousel.module.css";
 
 import ControlsArrows from "../ControlsArrows/ControlArrows";
-
-import categories from "./data";
+import CarouselCardInColumn from "./CarouselCardInColumn/CarouselCardInColumn.js";
+import categories from "../../data/categories/data";
 
 class Carousel extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      data: props.data,
+      activeIndex: 0,
+      column: {
+        useColumn: true,
+        numOfCards: 8
+      }
+    };
   }
-
-  state = {
-    data: categories,
-    activeIndex: 0,
-    columnStructure: false
-  };
 
   scrollLeft = () => {
     let index = (this.state.activeIndex - 2) % this.state.data.length;
@@ -42,47 +44,30 @@ class Carousel extends React.Component {
   constructData = () => {
     let data = [];
     let items = this.state.data;
-    for (var i = 0; i < this.state.data.length; i += 2) {
-      let f = (
-        <div className={classes.carouselColumn} key={`${items[i].id}`}>
-          <div key={items[i].id} className={classes.carouselSlide}>
-            <div className={classes.imgWrapper}>
-              <img src={items[i].url} alt="bla"></img>
-            </div>
-            <div className={classes.slideTitle}>{items[i].categoryName}</div>
-            <div className={classes.slideInfo}>
-              {items[i].numOfRestaurants} restaurants
-            </div>
-          </div>
-          <div key={items[i + 1].id} className={classes.carouselSlide}>
-            <div className={classes.imgWrapper}>
-              <img src={items[i + 1].url} alt="bla"></img>
-            </div>
-            <div className={classes.slideTitle}>
-              {items[i + 1].categoryName}
-            </div>
-            <div className={classes.slideInfo}>
-              {items[i + 1].numOfRestaurants} restaurants
-            </div>
-          </div>
-        </div>
-      );
-      data.push(f);
+    if (this.state.column.useColumn) {
+      for (var i = 0; i < this.state.data.length; i += 2) {
+        let columnData = [items[i]];
+        if (i + 1 < this.state.data.length) columnData.push(items[i + 1]);
+        let cardInColumn = <CarouselCardInColumn data={columnData} />;
+        data.push(cardInColumn);
+      }
     }
     return data;
   };
 
   render() {
     let list = this.constructData();
-
     return (
       <div className={classes.container}>
         <div className={classes.carouselHeaderContainer}>
-          <div className={classes.header}>Categories</div>
-          <ControlsArrows
-            scrollLeft={this.scrollLeft}
-            scrollRight={this.scrollRight}
-          />
+          <div className={classes.header}>{this.props.header}</div>
+          {this.state.column.useColumn &&
+          this.state.data.length > this.state.column.numOfCards ? (
+            <ControlsArrows
+              scrollLeft={this.scrollLeft}
+              scrollRight={this.scrollRight}
+            />
+          ) : null}
         </div>
         <div className={classes.carouselContainer}>
           <div className={classes.carouselTrack}>{list}</div>
