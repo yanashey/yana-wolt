@@ -37,16 +37,38 @@ ul {
   margin: 20px auto;
 }
 
-
-
 .carouselTrack {
   max-width: 100%;
   max-height: 400px;
   display: flex;
   flex-direction: row;
+  /* transform: translate3d(-280px, 0, 0); */
   position: absolute;
 }
 
-
-
 /* end of carousel css */
+
+.controlsWrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.totalButton {
+  line-height: 24px;
+  border: 1px solid var(--color6);
+  padding: 0.5em 2em;
+  border-radius: 5%;
+  color: var(--color1);
+  background: none;
+  margin-right: 10px;
+}
+
+.totalButton:focus {
+  outline: 0;
+}
+
+.totalButton:hover {
+  color: var(--color1);
+  cursor: pointer;
+  box-shadow: 1px 1px 0.5px 3px rgba(247, 247, 247, 0.8);
+}

@@ -1,6 +1,6 @@
 .carouselColumn {
-    display: flex;
-    flex-direction: column;
-    margin-right: 10px;
-    height: 100%;
-  }
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  height: 100%;
+}
