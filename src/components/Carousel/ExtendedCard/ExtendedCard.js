@@ -11,9 +11,9 @@ const ExtendedCard = props => {
   let emoji;
 
   if (props.data.score >= 9.0) {
-    emoji = <Twemoji text={"😄"} />;
+    emoji = <Twemoji svg text={"😄"} />;
   } else {
-    emoji = <Twemoji text={"🙂"} />;
+    emoji = <Twemoji svg text={"🙂"} />;
   }
 
   return (

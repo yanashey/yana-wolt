@@ -31,23 +31,23 @@ const telAvivSweets = [
   },
   {
     id: 4,
-    url: require("../../images/restaurants/telAviv/showroom_bakehouse.jpg"),
-    title: "The Showroom Bakehouse Betzalel",
-    description: "American Style Bakehouse",
+    url: require("../../images/restaurants/telAviv/sweet_box.jpg"),
+    title: "Sweet Box",
+    description: "Traditional American Bakery",
     pricing: 2,
-    deliveryEstimation: 30,
+    deliveryEstimation: 35,
     score: 9.4,
-    tags: ["bakery", "donuts", "sweets"]
+    tags: ["dessert", "kosher", "pastry"]
   },
   {
     id: 5,
-    url: require("../../images/restaurants/telAviv/showroom_bakehouse.jpg"),
-    title: "The Showroom Bakehouse Betzalel",
-    description: "American Style Bakehouse",
-    pricing: 2,
-    deliveryEstimation: 30,
+    url: require("../../images/restaurants/telAviv/la_gaterie.jpg"),
+    title: "La Gaterie",
+    description: "Guilty Plesure",
+    pricing: 1,
+    deliveryEstimation: 25,
     score: 9.4,
-    tags: ["bakery", "donuts", "sweets"]
+    tags: ["sandwitch", "dessert", "sweets"]
   }
 ];
 

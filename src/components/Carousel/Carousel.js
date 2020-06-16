@@ -26,9 +26,11 @@ class Carousel extends React.Component {
   }
 
   scrollLeft = () => {
-    let index = (this.state.activeIndex - 2) % this.state.data.length;
-    let last = this.state.data.slice(-2);
-    let rest = this.state.data.slice(0, -2);
+    let cardMovement = this.state.column.useColumn ? 2 : 1;
+    let index =
+      (this.state.activeIndex - cardMovement) % this.state.data.length;
+    let last = this.state.data.slice(-cardMovement);
+    let rest = this.state.data.slice(0, -cardMovement);
     let images = [...last, ...rest];
     console.log(index);
 
@@ -39,15 +41,26 @@ class Carousel extends React.Component {
   };
 
   scrollRight = () => {
-    let index = (this.state.activeIndex + 2) % this.state.data.length;
-    let rest = this.state.data.slice(2, this.state.data.length);
-    let first = this.state.data.slice(0, 2);
+    let cardMovement = this.state.column.useColumn ? 2 : 1;
+    let index =
+      (this.state.activeIndex + cardMovement) % this.state.data.length;
+    let rest = this.state.data.slice(cardMovement, this.state.data.length);
+    let first = this.state.data.slice(0, cardMovement);
     let images = [...rest, ...first];
 
     this.setState({
       activeIndex: index,
       data: images
     });
+  };
+
+  shouldDisplayControlsArrows = () => {
+    return (
+      (this.state.column.useColumn &&
+        this.state.data.length > this.state.column.numOfCards) ||
+      (this.state.row.useRow &&
+        this.state.data.length > this.state.row.numOfCards)
+    );
   };
 
   constructData = () => {
@@ -79,10 +92,7 @@ class Carousel extends React.Component {
                 All ({this.state.data.length})
               </div>
             ) : null}
-            {(this.state.column.useColumn &&
-              this.state.data.length > this.state.column.numOfCards) ||
-            (this.state.row.useRow &&
-              this.state.data.length > this.state.row.numOfCards) ? (
+            {this.shouldDisplayControlsArrows() ? (
               <ControlsArrows
                 scrollLeft={this.scrollLeft}
                 scrollRight={this.scrollRight}
