@@ -6,6 +6,14 @@ import telAvivSweets from "../../data/restaurants/telAviv";
 import Carousel from "../../components/Carousel/Carousel";
 
 class Discovery extends React.Component {
+  componentDidMount() {
+    if ("geolocation" in navigator) {
+      console.log("Available");
+    } else {
+      console.log("Not Available");
+    }
+  }
+
   render() {
     return (
       <div>

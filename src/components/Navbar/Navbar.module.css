@@ -27,6 +27,11 @@
   cursor: pointer;
 }
 
+.signUp {
+  border: 1px solid var(--color5);
+  padding: 5px 7px;
+}
+
 .logo {
   font-family: "Kaushan Script";
   font-weight: 600;
