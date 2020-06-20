@@ -10,13 +10,13 @@ import Geocode from "react-geocode";
 class App extends React.Component {
   constructor() {
     super();
-    Geocode.setApiKey("AIzaSyCpKKsGO-b8ZWhOFbHE4y9qtUra4SCZhBc");
-    Geocode.enableDebug();
-
     this.state = {
       loading: true,
       address: ""
     };
+
+    Geocode.setApiKey(process.env.REACT_APP_GOOGLE_GEOLOCATION_API_KEY);
+    Geocode.enableDebug();
   }
 
   getCurrentPositionSuccess = pos => {
