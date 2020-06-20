@@ -12,37 +12,51 @@
 }
 
 .subNavbarWrapper {
-  padding: 0 30px;
+  padding: 0 20px;
+  margin: 0 auto;
   height: 100%;
-  margin: 0 245px;
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  max-width: 1150px;
 }
 
 .left {
   display: flex;
+  max-width: fit-content;
   height: 100%;
-  width: 10px;
   align-items: center;
+  justify-content: center;
+  color: var(--color3);
+}
+
+.locationIcon {
+  margin-right: 4px;
+}
+
+.locationAddress {
   color: var(--color7);
 }
 
-.actionsContainer {
+.center {
+  /* border: 1px solid black; */
   display: flex;
-  /* flex-grow: 2; */
+  flex-grow: 2;
   height: 100%;
   flex-direction: row;
   justify-content: center;
-  margin: 0 auto;
+  align-items: center;
+  padding-right: 80px;
+  /* text-align: center; */
+  /* margin-left: -50px; */
 }
 
 .action {
   margin: 8px;
 }
 
-.actionsContainer span {
+.center span {
   margin: 8px;
 }
 
@@ -53,10 +67,4 @@
 .action:hover {
   color: var(--color1);
   cursor: pointer;
-}
-
-.subActionsContainer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }

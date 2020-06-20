@@ -1,4 +1,4 @@
-const telAvivSweets = [
+const restaurants = [
   {
     id: 1,
     url: require("../../images/restaurants/telAviv/nigh_cookie.jpg"),
@@ -9,6 +9,7 @@ const telAvivSweets = [
     score: 9.2,
     tags: ["snacks", "sweets", "dessert"]
   },
+
   {
     id: 2,
     url: require("../../images/restaurants/telAviv/bianco_nero.jpg"),
@@ -51,4 +52,4 @@ const telAvivSweets = [
   }
 ];
 
-export default telAvivSweets;
+export default restaurants;

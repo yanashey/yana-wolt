@@ -13,10 +13,14 @@ const subNavbar = props => {
     <div>
       <nav className={classes.subNavbar}>
         <div className={classes.subNavbarWrapper}>
-          <span className={classes.left}>
-            <FontAwesomeIcon icon={faMapMarkerAlt} />
-          </span>
-          <div className={classes.actionsContainer}>
+          <div className={classes.left}>
+            <span className={classes.locationIcon}>
+              <FontAwesomeIcon icon={faMapMarkerAlt} />
+            </span>
+            <span className={classes.locationAddress}>{props.address}</span>
+          </div>
+
+          <div className={classes.center}>
             <div className={classes.action}>
               <span className={classes.actionIcon}>
                 <FontAwesomeIcon icon={faUtensils} />
