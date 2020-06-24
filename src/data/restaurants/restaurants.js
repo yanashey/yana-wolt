@@ -44,11 +44,11 @@ const restaurants = [
     id: 5,
     url: require("../../images/restaurants/telAviv/la_gaterie.jpg"),
     title: "La Gaterie",
-    description: "Guilty Plesure",
+    description: "Guilty Pleasure",
     pricing: 1,
     deliveryEstimation: 25,
     score: 9.4,
-    tags: ["sandwitch", "dessert", "sweets"]
+    tags: ["sandwich", "dessert", "sweets"]
   }
 ];
 
