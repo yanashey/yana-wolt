@@ -17,7 +17,7 @@ const ExtendedCard = props => {
   }
 
   return (
-    <div className={classes.carouselSlide}>
+    <div className={classes.carouselSlide} key={props.data.id}>
       <div className={classes.root}>
         <div className={classes.imgContainer}>
           <div className={classes.slideImg}>

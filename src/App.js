@@ -6,6 +6,9 @@ import Navbar from "./components/Navbar/Navbar";
 import SubNavbar from "./components/SubNavbar/SubNavbar";
 import Discovery from "./pages/discovery/Discovery";
 import Geocode from "react-geocode";
+import Firebase from "firebase";
+import firebaseConfig from "./firebaseConfig";
+import Footer from "./components/Footer/Footer";
 
 class App extends React.Component {
   constructor() {
@@ -17,6 +20,8 @@ class App extends React.Component {
 
     Geocode.setApiKey(process.env.REACT_APP_GOOGLE_GEOLOCATION_API_KEY);
     Geocode.enableDebug();
+    // Firebase.initializeApp(firebaseConfig);
+    // Firebase.analytics();
   }
 
   getCurrentPositionSuccess = pos => {
@@ -64,6 +69,7 @@ class App extends React.Component {
                 path="/delivery"
               />
             </Switch>
+            <Footer />
           </div>
         )}
       </BrowserRouter>

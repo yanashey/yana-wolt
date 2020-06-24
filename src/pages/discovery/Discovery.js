@@ -6,6 +6,7 @@ import restaurants from "../../data/restaurants/restaurants";
 import Carousel from "../../components/Carousel/Carousel";
 import Geocode from "react-geocode";
 
+
 class Discovery extends React.Component {
   constructor(props) {
     super(props);
@@ -15,6 +16,10 @@ class Discovery extends React.Component {
     this.state = {
       address: this.props.address
     };
+  }
+
+  componentDidMount(){
+      
   }
 
   render() {

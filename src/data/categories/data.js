@@ -137,6 +137,13 @@ const categories = [
     info: "6 restaurants",
     url: require("./../../images/categories/smoothie.jpg-md")
   }
+  ,
+  {
+    id: 24,
+    title: "Smoothie",
+    info: "6 restaurants",
+    url: require("./../../images/categories/smoothie.jpg-md")
+  }
 ];
 
 export default categories;

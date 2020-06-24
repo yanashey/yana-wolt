@@ -1,7 +1,7 @@
 const restaurants = [
   {
     id: 1,
-    url: require("../../images/restaurants/telAviv/nigh_cookie.jpg"),
+    url: require("../../images/restaurants/telAviv/night_cookie.jpg"),
     title: "Night Cookie",
     description: "Warm & Fresh Cookies, Baked to order",
     pricing: 2,

@@ -15,7 +15,9 @@ class Carousel extends React.Component {
       activeIndex: 0,
       column: {
         useColumn: this.props.column || false,
-        numOfCards: 8
+        numOfCards: 8,
+        slidesPerRow: 3,
+        rows: 2
       },
       row: {
         useRow: this.props.extendedCard || false,
@@ -101,7 +103,10 @@ class Carousel extends React.Component {
           </div>
         </div>
         <div className={classes.carouselContainer}>
-          <div className={classes.carouselTrack} ref={this.carousel}>
+          <div
+            className={classes.carouselTrack}
+            ref={this.carousel}
+          >
             {list}
           </div>
         </div>

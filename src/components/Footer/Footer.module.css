@@ -1,0 +1,117 @@
+.footer {
+  height: 400px;
+  background-color: var(--color8);
+  font-family: "Roboto";
+}
+
+.footerWrapper {
+  max-width: 1150px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.row {
+  /* 38pxborder: 1px solid red; */
+  display: flex;
+  margin-top: 30px;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.logo {
+  font-family: "Kaushan Script";
+  font-weight: 600;
+  font-size: 200%;
+  color: var(--color3);
+}
+
+.columnHeader {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  /* opacity: 0.8; */
+}
+
+.column {
+  margin-right: 20%;
+  line-height: 25px;
+}
+
+.downloadColumn {
+  /* display: flex; */
+  /* border: 1px solid green; */
+  /* margin-right: 20%; */
+}
+
+.appBadge {
+  margin-bottom: 10px;
+  width: 160px;
+}
+
+.appBadge:hover {
+  cursor: pointer;
+}
+
+.jobsColumn {
+  /* border: 1px solid green; */
+  margin-right: 15%;
+  /* display: flex; */
+}
+
+.woltColumn {
+  /* border: 1px solid green; */
+  /* display: flex; */
+}
+
+.columnLink:hover {
+  color: var(--color1);
+  cursor: pointer;
+}
+
+.termsAndConditions {
+  margin-left: 30px;
+}
+
+.social {
+  margin-left: -40px;
+}
+
+.socialIcon {
+  margin-right: 15px;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 6px;
+  transition: all 0.2s ease-in;
+}
+
+.socialIcon:hover {
+  cursor: pointer;
+}
+
+.facebook:hover {
+  color: white;
+  background: #4267b2;
+}
+
+.twitter:hover {
+  color: white;
+  background: #1da1f2;
+}
+
+.instagram:hover {
+  color: white;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+.linkedin:hover {
+  color: white;
+  background: #2867b2;
+}
