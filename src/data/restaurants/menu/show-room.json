@@ -1,0 +1,117 @@
+{
+  "id": "1",
+  "coverUrl": "show-room.jpg",
+  "title": "The Showroom Bakehouse Pinkas",
+  "description": "American style bakehouse",
+  "pricing": 2,
+  "tags": ["sweet", "donut", "dessert"],
+  "score": 9.4,
+  "city": "Tel Aviv",
+  "addressInformation": {
+    "address": "Pinkas 3",
+    "postCode": 6203218,
+    "lat": 34.67,
+    "long": 34.56
+  },
+  "open": true,
+  "information": {
+    "opening": {
+      "restaurant": {
+        "Monday-Thursday": "08.00-21.00",
+        "Friday": "08.00-16.00",
+        "Saturday": "Closed",
+        "Sunday": "08.00-21.00"
+      },
+      "delivery": {
+        "Monday-Thursday": "09.00-21.00",
+        "Friday": "09.00-16.00",
+        "Saturday": "Closed",
+        "Sunday": "09.00-21.00"
+      }
+    },
+    "deliveryPricing": {
+      "basePrice": 1000,
+      "minimumDeliveryPrice": 5000,
+      "tax": 0.17,
+      "longDeliveryCharge": 1000
+    }
+  },
+  "phone": "+972547355345",
+"deliveryEstimation": 25,
+  "website": "https://www.theshowroom.co.il",
+  "timeZone": "Asia/Jerusalem",
+  "menu": [
+    {
+      "id": "99577f27-2bc0-42a4-9a04-4951555fd9c8",
+      "sectionTitle": "specials",
+      "items": [
+        {
+          "id": "691f1237-43d9-4577-ac2b-ccc61f6ff83a",
+          "title": "Quarantine Pack",
+          "description": "he 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop",
+          "price": 15200
+        },
+        {
+          "id": "16bc2a72-74c9-490a-86f5-e2fdf4d5c99c",
+          "title": "Lemon cheesecake Cronut",
+          "description": "Cronut filled with Lemon cheesecake cream",
+          "price": 1400
+        },
+        {
+          "id": "c4abdda3-c6d3-4d03-a9e6-1de53c632fc2",
+          "title": "Brownie Cronut",
+          "description": "is simply dummy text of the printing and typesetting",
+          "price": 1600
+        }
+      ]
+    },
+    {
+      "id": "65b2001e-b847-48f7-826e-230266ae1eed",
+      "sectionTitle": "mix them",
+      "items": [
+        {
+          "id": "04d5b16a-bda6-43ea-83f6-04e9b48edf1d",
+          "title": "Doughnut 12 pack",
+          "description": "he 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop",
+          "price": 14400
+        },
+        {
+          "id": "7683818d-11b8-48cd-963d-96cb7092c315",
+          "title": "cookies 6 pack",
+          "description": "Cronut filled with Lemon cheesecake cream",
+          "price": 8400
+        },
+        {
+          "id": "b765513f-27e4-429c-be9f-e9dceac25165",
+          "title": "Doughnut 6 pack",
+          "description": "is simply dummy text of the printing and typesetting",
+          "price": 7200
+        }
+      ]
+    },
+    {
+      "id": "175ae4aa-6d95-42ff-9e96-28c140bb8c97",
+      "sectionTitle": "cookies",
+      "items": [
+        {
+          "id": "eb456398-f4e2-4a90-8768-db4c0d966675",
+          "title": "Triple chocolate",
+          "description": "he 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop",
+          "price": 1400
+        },
+        {
+          "id": "97179d26-4c39-4f5c-8c36-f9bae1aa82b5",
+          "title": "smores",
+          "description": "Cronut filled with Lemon cheesecake cream",
+          "price": 1400
+        },
+        {
+          "id": "87decb56-ad95-46cc-bfcf-e0e8c3854096",
+          "title": "white choco and coconut",
+          "description": "is simply dummy text of the printing and typesetting",
+          "price": 1400
+        }
+      ]
+    }
+  ]
+}

@@ -2,9 +2,9 @@ import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
 
-import Navbar from "./components/Navbar/Navbar";
-import SubNavbar from "./components/SubNavbar/SubNavbar";
+
 import Discovery from "./pages/discovery/Discovery";
+import Restaurant from "./pages/restaurant/Restaurant";
 // import Geocode from "react-geocode";
 // import Firebase from "firebase";
 // import firebaseConfig from "./firebaseConfig";
@@ -53,8 +53,7 @@ class App extends React.Component {
           <div>Loading</div>
         ) : (
           <div className="App">
-            <Navbar />
-            <SubNavbar address={this.state.address} />
+            
             <Switch>
               <Route exact path="/" component={() => <h1>Home</h1>} />
               <Route exact component={() => <h1>Login</h1>} path="/login" />
@@ -71,6 +70,11 @@ class App extends React.Component {
                 component={() => <h1>Delivery</h1>}
                 path="/delivery"
               />
+              <Route
+                exact
+                path="/restaurants/:restaurantId"
+                render={props => <Restaurant {...props} />}
+              ></Route>
             </Switch>
             <Footer />
           </div>

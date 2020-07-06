@@ -1,13 +1,9 @@
 import React from "react";
 import classes from "./ExtendedCard.module.css";
 import { Emoji, Twemoji } from "react-emoji-render";
+import Pricing from "../../Pricing/Pricing";
 
 const ExtendedCard = props => {
-  let dollars = "";
-  for (let i = 0; i < props.data.pricing; i++) {
-    dollars += "$";
-  }
-
   let emoji;
 
   if (props.data.score >= 9.0) {
@@ -35,7 +31,9 @@ const ExtendedCard = props => {
           </div>
           <div className={classes.cardBottomBorder}></div>
           <div className={classes.bottomRow}>
-            <span className={classes.additionalInfo}>{dollars}</span>
+            <span className={classes.additionalInfo}>
+              <Pricing pricing={props.data.pricing} />
+            </span>
             <span className={classes.additionalInfo}>
               &nbsp;·&nbsp; {props.data.deliveryEstimation} min
             </span>

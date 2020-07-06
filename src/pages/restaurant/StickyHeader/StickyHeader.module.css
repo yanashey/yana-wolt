@@ -1,0 +1,47 @@
+/* Sticky header */
+.stickyHeader {
+  width: 100%;
+  position: sticky;
+  height: 70px;
+  top: 0;
+  z-index: 1000;
+  color: white;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: 1200px;
+}
+
+.stickyHeaderWrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  font-size: 1.1em;
+  max-width: 1150px;
+}
+
+.left {
+  display: flex;
+  flex: 1;
+}
+
+.deliveryEstimation {
+  margin-left: 5px;
+}
+
+.center {
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.right {
+  flex: 1;
+  text-align: right;
+}
+
+.shoppingItem {
+  margin-right: 10px;
+}
+/* Sticky header end */

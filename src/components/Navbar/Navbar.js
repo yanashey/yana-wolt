@@ -4,7 +4,11 @@ import { Route, Link } from "react-router-dom";
 
 const navbar = props => {
   return (
-    <div className={classes.Navbar}>
+    <div
+      className={`${classes.Navbar}  ${
+        props.transparent ? classes.transparent : ""
+      }`}
+    >
       <div className={classes.logo}>Wolt</div>
       <nav>
         <ul className={classes.navLinks}>

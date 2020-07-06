@@ -5,6 +5,7 @@ import ControlsArrows from "../ControlsArrows/ControlArrows";
 import CarouselCardInColumn from "./CarouselCardInColumn/CarouselCardInColumn.js";
 import ExtendedCard from "./ExtendedCard/ExtendedCard";
 import categories from "../../data/categories/data";
+import { Link } from "react-router-dom";
 
 class Carousel extends React.Component {
   constructor(props) {
@@ -77,13 +78,21 @@ class Carousel extends React.Component {
         data.push(cardInColumn);
       }
     } else {
-      data = this.state.data.map(item => <ExtendedCard data={item} />);
+      data = this.state.data.map(item => (
+        <Link
+          to={`/restaurants/${item.id}`}
+          style={{ textDecoration: "none", color: "Black" }}
+        >
+          <ExtendedCard data={item} />
+        </Link>
+      ));
     }
     return data;
   };
 
   render() {
     let list = this.constructData();
+    console.log(this.context.history);
     return (
       <div className={classes.container}>
         <div className={classes.carouselHeaderContainer}>
@@ -103,10 +112,7 @@ class Carousel extends React.Component {
           </div>
         </div>
         <div className={classes.carouselContainer}>
-          <div
-            className={classes.carouselTrack}
-            ref={this.carousel}
-          >
+          <div className={classes.carouselTrack} ref={this.carousel}>
             {list}
           </div>
         </div>

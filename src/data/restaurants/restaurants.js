@@ -7,7 +7,8 @@ const restaurants = [
     pricing: 2,
     deliveryEstimation: 25,
     score: 9.2,
-    tags: ["snacks", "sweets", "dessert"]
+    tags: ["snacks", "sweets", "dessert"],
+    location: "tel-aviv"
   },
 
   {
@@ -18,7 +19,8 @@ const restaurants = [
     pricing: 2,
     deliveryEstimation: 40,
     score: 9.4,
-    tags: ["ice cream", "italian"]
+    tags: ["ice cream", "italian"],
+    location: "tel-aviv"
   },
   {
     id: 3,
@@ -28,7 +30,8 @@ const restaurants = [
     pricing: 2,
     deliveryEstimation: 30,
     score: 9.4,
-    tags: ["bakery", "donuts", "sweets"]
+    tags: ["bakery", "donuts", "sweets"],
+    location: "tel-aviv"
   },
   {
     id: 4,
@@ -38,7 +41,8 @@ const restaurants = [
     pricing: 2,
     deliveryEstimation: 35,
     score: 9.4,
-    tags: ["dessert", "kosher", "pastry"]
+    tags: ["dessert", "kosher", "pastry"],
+    location: "tel-aviv"
   },
   {
     id: 5,
@@ -48,7 +52,8 @@ const restaurants = [
     pricing: 1,
     deliveryEstimation: 25,
     score: 9.4,
-    tags: ["sandwich", "dessert", "sweets"]
+    tags: ["sandwich", "dessert", "sweets"],
+    location: "tel-aviv"
   }
 ];
 

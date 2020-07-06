@@ -1,0 +1,46 @@
+cover {
+  height: 800px;
+}
+
+.coverImg {
+  height: 600px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.9;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: -70px;
+  z-index: -1;
+}
+
+.coverContainer {
+  height: 300px;
+  margin-top: 70px;
+  color: var(--color8);
+  margin: 100px auto;
+  /* border: 1px solid blue; */
+  max-width: 1150px;
+}
+
+.coverTitle {
+  font-size: 4rem;
+  padding-top: 10px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.coverDescription {
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.2em;
+  margin-top: 30px;
+}
+
+.coverPricing {
+  text-align: left;
+  font-size: 1.4rem;
+  margin-top: 30px;
+}

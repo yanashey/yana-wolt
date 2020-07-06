@@ -11,6 +11,11 @@
   max-width: 1150px;
 }
 
+.transparent {
+  background-color: transparent;
+  color: var(--color2) !important;
+}
+
 .navLinks {
   list-style-type: none;
   display: flex;
@@ -19,7 +24,6 @@
   flex-direction: row;
   padding: 10px;
   width: 200px;
-  color: var(--color3);
 }
 
 .navLink:hover {
@@ -36,5 +40,4 @@
   font-family: "Kaushan Script";
   font-weight: 600;
   font-size: 200%;
-  color: var(--color3);
 }

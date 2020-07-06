@@ -87,6 +87,7 @@
 .additionalInfo {
   font-size: small;
   margin-right: 1px;
+  display: inline-block;
 }
 
 /* End bottom slide properties */
