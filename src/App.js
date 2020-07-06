@@ -1,7 +1,6 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import "./App.css";
-
 
 import Discovery from "./pages/discovery/Discovery";
 import Restaurant from "./pages/restaurant/Restaurant";
@@ -53,9 +52,7 @@ class App extends React.Component {
           <div>Loading</div>
         ) : (
           <div className="App">
-            
             <Switch>
-              <Route exact path="/" component={() => <h1>Home</h1>} />
               <Route exact component={() => <h1>Login</h1>} path="/login" />
               <Route exact component={() => <h1>Sign Up</h1>} path="/sign-up" />
               <Route
@@ -75,6 +72,7 @@ class App extends React.Component {
                 path="/restaurants/:restaurantId"
                 render={props => <Restaurant {...props} />}
               ></Route>
+              <Redirect to="/discover" />
             </Switch>
             <Footer />
           </div>
