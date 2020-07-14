@@ -1,11 +1,6 @@
 .root {
   min-height: 1000px;
   position: relative;
-
-  /* border: 1px solid pink; */
-}
-
-.contentRoot {
 }
 
 .main {
@@ -13,29 +8,4 @@
   grid-template-columns: 150px 50% auto;
   margin: 50px auto;
   max-width: 1150px;
-  border: 1px solid green;
-}
-
-.categories {
-}
-
-.category {
-  text-transform: uppercase;
-  margin-right: 10px;
-  text-align: start;
-  padding-left: 10px;
-  margin-bottom: 20px;
-  /* justify-content: start; */
-  /* float: left; */
-  /* border: 1px solid brown; */
-  text-decoration: none;
-  color: var(--color10);
-  font-size: 1.3rem;
-  transition: border-bottom 1s eas-in;
-
-}
-
-.category:hover {
-  border-bottom: 2px solid var(--color10);
-  cursor: pointer;
 }
