@@ -17,7 +17,7 @@ const MenuItem = props => {
                 {item.description}
               </span>
               <span>
-                <img src={require("./cookie_1.jpeg")} alt="ff"></img>
+                <img src={require("./" + `${item.img}`)} alt="ff"></img>
               </span>
             </div>
             <div className={classes.sectionItemPrice}>
