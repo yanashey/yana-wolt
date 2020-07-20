@@ -1,6 +1,6 @@
 {
   "id": "1",
-  "coverUrl": "show-room.jpg",
+  "coverUrl": "show-room",
   "title": "The Showroom Bakehouse Pinkas",
   "description": "American style bakehouse",
   "pricing": 2,
@@ -54,7 +54,7 @@
             "id": "4c0c3ef5-31c7-4943-a17d-88a88f80c325",
             "name": "popular"
           },
-          "img": "cookie_1.jpeg"
+          "img": "cookie_1"
         },
         {
           "id": "16bc2a72-74c9-490a-86f5-e2fdf4d5c99c",
@@ -65,7 +65,7 @@
             "id": "4c0c3ef5-31c7-4943-a17d-88a88f80c325",
             "name": "popular"
           },
-          "img": "cookie_2.jpeg"
+          "img": "cookie_2"
         },
         {
           "id": "c4abdda3-c6d3-4d03-a9e6-1de53c632fc2",
@@ -73,7 +73,7 @@
           "description": "is simply dummy text of the printing and typesetting",
           "price": 1600,
           "tags": {},
-          "img": "cookie_4.jpeg"
+          "img": "cookie_4"
         }
       ]
     },
@@ -90,7 +90,7 @@
             "id": "4c0c3ef5-31c7-4943-a17d-88a88f80c325",
             "name": "popular"
           },
-          "img": "cookie_1.jpeg"
+          "img": "cookie_1"
         },
         {
           "id": "7683818d-11b8-48cd-963d-96cb7092c315",
@@ -98,7 +98,7 @@
           "description": "Cronut filled with Lemon cheesecake cream",
           "price": 8400,
           "tags": {},
-          "img": "cookie_2.jpeg"
+          "img": "cookie_2"
         },
         {
           "id": "b765513f-27e4-429c-be9f-e9dceac25165",
@@ -109,7 +109,7 @@
             "id": "4c0c3ef5-31c7-4943-a17d-88a88f80c325",
             "name": "popular"
           },
-          "img": "cookie_4.jpeg"
+          "img": "cookie_4"
         }
       ]
     },
@@ -123,7 +123,7 @@
           "description": "he 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop",
           "price": 1400,
           "tags": {},
-          "img": "cookie_1.jpeg"
+          "img": "cookie_1"
         },
         {
           "id": "97179d26-4c39-4f5c-8c36-f9bae1aa82b5",
@@ -131,7 +131,7 @@
           "description": "Cronut filled with Lemon cheesecake cream",
           "price": 1400,
           "tags": {},
-          "img": "cookie_2.jpeg"
+          "img": "cookie_2"
         },
         {
           "id": "87decb56-ad95-46cc-bfcf-e0e8c3854096",
@@ -139,7 +139,7 @@
           "description": "is simply dummy text of the printing and typesetting",
           "price": 1400,
           "tags": {},
-          "img": "cookie_3.jpeg"
+          "img": "cookie_3"
         }
       ]
     }

@@ -2,6 +2,7 @@ import React from "react";
 import classes from "./ExtendedCard.module.css";
 import { Emoji, Twemoji } from "react-emoji-render";
 import Pricing from "../../Pricing/Pricing";
+import Image from "react-image-webp";
 
 const ExtendedCard = props => {
   let emoji;

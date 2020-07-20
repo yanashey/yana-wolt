@@ -4,7 +4,9 @@ import Pricing from "../../../components/Pricing/Pricing";
 import Tags from "../Tags/Tags";
 
 const Cover = props => {
-  let coverUrl = require("../../../data/restaurants/menu/" + props.coverUrl);
+  let coverUrl = require("../../../data/restaurants/menu/" +
+    props.coverUrl +
+    ".webp");
   let background = { backgroundImage: "url(" + coverUrl + ")" };
   return (
     <div className={classes.coverContainer}>

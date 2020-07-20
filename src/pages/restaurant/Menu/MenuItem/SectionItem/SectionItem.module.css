@@ -1,0 +1,87 @@
+.sectionItem {
+  border-top: 1px solid var(--color6);
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.addItem {
+  margin-right: 15px;
+  font-size: 1.2em;
+  width: 10px;
+  color: var(--color7);
+}
+
+.addItem:hover {
+  cursor: pointer;
+}
+
+.itemDescriptionContainer {
+  flex: 1;
+}
+
+.itemImage {
+  height: 100px;
+}
+/* .sectionItem:hover {
+    box-shadow: 0px 0px 1px 1px var(--color5);
+  } */
+
+.sectionItem:last-child {
+  border-bottom: 1px solid var(--color6);
+  padding-bottom: 50px;
+}
+
+.sectionItemTitle {
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  text-transform: capitalize;
+}
+
+.sectionItemDescription {
+  align-items: center;
+  color: var(--color10);
+  position: relative;
+  display: flex;
+}
+
+.sectionItemDescriptionText {
+  margin-right: 0px;
+  text-align: left;
+  margin-bottom: 10px;
+  flex: 2;
+}
+
+.sectionItemPrice {
+  text-align: left;
+  color: var(--color1);
+}
+
+.currency {
+  font-size: 1.3rem;
+}
+
+.menuTag {
+  text-transform: uppercase;
+  background: var(--color1);
+  color: var(--color2);
+  margin-left: 10px;
+  font-size: 0.6em;
+  font-weight: 600;
+  padding: 4px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.menuTagIcon {
+  font-size: 0.8em;
+  margin-right: 3px;
+  margin-bottom: 1px;
+}
+
+img {
+  width: 100px;
+}

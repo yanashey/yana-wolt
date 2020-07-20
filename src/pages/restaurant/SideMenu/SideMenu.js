@@ -14,7 +14,7 @@ const SideMenu = props => {
               spy={true}
               smooth={true}
               duration={500}
-              offset={-50}
+              offset={-200}
               key={category.id}
               className={classes.category}
             >
