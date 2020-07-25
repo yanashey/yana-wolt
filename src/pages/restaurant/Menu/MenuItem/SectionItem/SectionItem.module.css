@@ -24,9 +24,7 @@
 .itemImage {
   height: 100px;
 }
-/* .sectionItem:hover {
-    box-shadow: 0px 0px 1px 1px var(--color5);
-  } */
+
 
 .sectionItem:last-child {
   border-bottom: 1px solid var(--color6);

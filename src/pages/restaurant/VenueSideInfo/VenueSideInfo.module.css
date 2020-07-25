@@ -1,0 +1,61 @@
+.container {
+  margin-top: 0;
+  text-align: left;
+}
+
+.venueTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 20px auto;
+}
+
+.zipCode {
+  color: var(--color7);
+  margin: 10px auto;
+  font-size: 0.9rem;
+}
+
+.mapLink {
+  color: var(--color1);
+  margin: 30px auto;
+  font-size: 0.9rem;
+}
+
+.mapLink:hover {
+  cursor: pointer;
+}
+
+.allergies {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: var(--color3);
+}
+
+.phone {
+  font-size: 0.9rem;
+  color: var(--color1);
+  margin-top: 10px;
+}
+
+.phone:hover {
+  cursor: pointer;
+}
+
+.moreInfoLink {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: var(--color1);
+}
+
+.moreInfoLink:hover {
+  cursor: pointer;
+}
+
+.swipeableViews {
+  margin-top: 10px;
+}

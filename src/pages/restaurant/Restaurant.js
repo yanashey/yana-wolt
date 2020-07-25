@@ -7,6 +7,7 @@ import Cover from "./Cover/Cover";
 import ScoreBar from "./ScoreBar/ScoreBar";
 import SideMenu from "./SideMenu/SideMenu";
 import Menu from "./Menu/Menu";
+import VenueSideInfo from "./VenueSideInfo/VenueSideInfo";
 
 const Restaurant = props => {
   return (
@@ -26,7 +27,12 @@ const Restaurant = props => {
           <div className={classes.main}>
             <SideMenu categories={data.menu} />
             <Menu menu={data.menu} />
-            <div>Additional info</div>
+            <VenueSideInfo
+              address={{ ...data.addressInformation, city: data.city }}
+              openingHours={data.information}
+              phone={data.phone}
+              allergies={data.allergies}
+            />
           </div>
         </div>
       </div>

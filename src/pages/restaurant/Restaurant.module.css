@@ -5,7 +5,7 @@
 
 .main {
   display: grid;
-  grid-template-columns: 150px 50% auto;
+  grid-template-columns: 150px 60% auto;
   margin: 50px auto;
   max-width: 1150px;
 }

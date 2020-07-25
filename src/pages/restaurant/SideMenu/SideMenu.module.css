@@ -1,6 +1,7 @@
 .categories {
   position: sticky;
   top: 120px;
+  margin: 0;
   /* max-height: calc(100vh - 140px); */
 }
 

@@ -1,0 +1,11 @@
+.opening {
+  font-size: 0.9rem;
+  justify-content: space-between;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.hours {
+  color: var(--color10);
+  letter-spacing: 0.5px;
+}
